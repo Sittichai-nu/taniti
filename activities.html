@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taniti Tourism - Activities and Attractions</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function navToggle(){document.querySelector('header').classList.toggle('nav-open');}
+    function filterToggle(el) {
+      var buttons = document.querySelectorAll('.filter-bar .fbtn');
+      for (var i = 0; i < buttons.length; i++) { buttons[i].classList.remove('on'); }
+      el.classList.add('on');
+    }
+  </script>
+</head>
+<body>
+
+<div class="wf-banner">TANITI TOURISM WEBSITE &mdash; LOW-FIDELITY WIREFRAME | UX Design Project</div>
+
+<header>
+  <div class="logo-box">LOGO | TANITI</div>
+  <button class="nav-toggle" onclick="navToggle()" aria-label="Toggle navigation">&#9776;</button>
+  <div class="nav-links">
+    <a href="index.html">About Taniti</a>
+    <a href="accommodations.html">Accommodations</a>
+    <a href="activities.html" class="active">Activities and Attractions</a>
+    <a href="dining.html">Dining</a>
+    <a href="transportation.html">Transportation</a>
+    <a href="faq.html">Travel Tips and FAQs</a>
+  </div>
+  <input class="nav-search" type="text" placeholder="Search..." />
+</header>
+
+<div class="page-title">Activities and Attractions</div>
+
+<div class="section">
+
+  <div class="filter-bar">
+    <button class="fbtn on"  onclick="filterToggle(this)">All</button>
+    <button class="fbtn"     onclick="filterToggle(this)">Beaches</button>
+    <button class="fbtn"     onclick="filterToggle(this)">Rainforest</button>
+    <button class="fbtn"     onclick="filterToggle(this)">Volcano</button>
+    <button class="fbtn"     onclick="filterToggle(this)">Water Sports</button>
+    <button class="fbtn"     onclick="filterToggle(this)">Entertainment</button>
+    <button class="fbtn"     onclick="filterToggle(this)">Cultural</button>
+    <button class="fbtn"     onclick="filterToggle(this)" style="border-color:#222;font-weight:bold">&#10003; Family-Friendly</button>
+  </div>
+
+  <div class="map-box">[ MAP WIDGET &mdash; Pinned locations of key attractions in Merriton Landing and Taniti City ]</div>
+
+  <div class="cards-3">
+    <div class="card">
+      <div class="card-img">[ Image Placeholder ]</div>
+      <div class="card-body"><span class="tag">Family-Friendly</span><h4>Beach Snorkeling</h4><p>Explore coral reefs along Taniti&rsquo;s white sandy beaches surrounding Yellow Leaf Bay.</p><button class="btn-book">Book Now</button></div>
+    </div>
+    <div class="card">
+      <div class="card-img">[ Image Placeholder ]</div>
+      <div class="card-body"><span class="tag">Family-Friendly</span><h4>Rainforest Zip-Lining</h4><p>Zip-line through the tropical rainforest canopy in the Merriton Landing area.</p><button class="btn-book">Book Now</button></div>
+    </div>
+    <div class="card">
+      <div class="card-img">[ Image Placeholder ]</div>
+      <div class="card-body"><h4>Volcano Hike</h4><p>Guided hike to Taniti&rsquo;s active volcano in the mountainous interior. Experienced hikers recommended.</p><button class="btn-book">Learn More</button></div>
+    </div>
+    <div class="card">
+      <div class="card-img">[ Image Placeholder ]</div>
+      <div class="card-body"><span class="tag">Family-Friendly</span><h4>Helicopter Rides</h4><p>Aerial tours over the volcano, rainforest, and Yellow Leaf Bay.</p><button class="btn-book">Book Now</button></div>
+    </div>
+    <div class="card">
+      <div class="card-img">[ Image Placeholder ]</div>
+      <div class="card-body"><span class="tag">Family-Friendly</span><h4>Chartered Fishing Tours</h4><p>Deep-sea fishing tours from the small harbor. All equipment provided.</p><button class="btn-book">Book Now</button></div>
+    </div>
+    <div class="card">
+      <div class="card-img">[ Image Placeholder ]</div>
+      <div class="card-body"><span class="tag">Family-Friendly</span><h4>Local History Museum</h4><p>Explore Taniti&rsquo;s indigenous culture and history. Located in Taniti City.</p><button class="btn-book">Learn More</button></div>
+    </div>
+    <div class="card">
+      <div class="card-img">[ Image Placeholder ]</div>
+      <div class="card-body"><span class="tag">Family-Friendly</span><h4>Boat &amp; Bus Island Tours</h4><p>Guided tours around the full island. Ideal for first-time visitors.</p><button class="btn-book">Book Now</button></div>
+    </div>
+    <div class="card">
+      <div class="card-img">[ Image Placeholder ]</div>
+      <div class="card-body"><h4>Microbrewery &amp; Pubs</h4><p>Visit Taniti&rsquo;s local microbrewery and pubs in Merriton Landing. Ages 18+ only.</p><button class="btn-book">Learn More</button></div>
+    </div>
+    <div class="card">
+      <div class="card-img">[ Image Placeholder ]</div>
+      <div class="card-body"><span class="tag">Family-Friendly</span><h4>Art Galleries &amp; Bowling</h4><p>Browse local art galleries and enjoy bowling at Merriton Landing.</p><button class="btn-book">Learn More</button></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Contact Information</h4><p>&#128205; 123 Island Way, Taniti</p><p>&#9993; info@visittaniti.com</p></div>
+      <div class="footer-col"><h4>Discover</h4><a href="index.html">About Taniti</a><a href="activities.html">Activities</a><a href="dining.html">Dining</a></div>
+      <div class="footer-col"><h4>Plan</h4><a href="accommodations.html">Accommodations</a><a href="transportation.html">Transportation</a><a href="faq.html">Travel Tips and FAQs</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Accessibility</a></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Taniti Tourism Board. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
