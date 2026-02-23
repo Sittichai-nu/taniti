@@ -1,86 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taniti Tourism - Travel Tips and FAQs</title>
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    function navToggle(){document.querySelector('header').classList.toggle('nav-open');}
-    function faqToggle(el) {
-      el.parentElement.classList.toggle('open');
-    }
-  </script>
-</head>
-<body>
-
-<div class="wf-banner">TANITI TOURISM WEBSITE &mdash; LOW-FIDELITY WIREFRAME | UX Design Project</div>
-
-<header>
-  <div class="logo-box">LOGO | TANITI</div>
-  <button class="nav-toggle" onclick="navToggle()" aria-label="Toggle navigation">&#9776;</button>
-  <div class="nav-links">
-    <a href="index.html">About Taniti</a>
-    <a href="accommodations.html">Accommodations</a>
-    <a href="activities.html">Activities and Attractions</a>
-    <a href="dining.html">Dining</a>
-    <a href="transportation.html">Transportation</a>
-    <a href="faq.html" class="active">Travel Tips and FAQs</a>
-  </div>
-  <input class="nav-search" type="text" placeholder="Search..." />
-</header>
-
-<div class="page-title">Travel Tips &amp; FAQs</div>
-
-<div class="section">
-  <p style="font-size:13px;color:#777;margin-bottom:20px">Click any question to expand the answer.</p>
-
-  <div class="faq-item">
-    <div class="faq-q" onclick="faqToggle(this)"><span class="faq-arrow">&#9658;</span> What currency is accepted on Taniti?</div>
-    <div class="faq-a">Taniti uses the U.S. dollar as its primary currency. Many businesses also accept euros and yen. Several banks facilitate currency exchange, and most businesses accept major credit cards.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q" onclick="faqToggle(this)"><span class="faq-arrow">&#9658;</span> What is the legal drinking age on Taniti?</div>
-    <div class="faq-a">The legal drinking age on Taniti is 18. Note that this law is not strictly enforced. Alcohol may not be served or sold between midnight and 9:00 a.m.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q" onclick="faqToggle(this)"><span class="faq-arrow">&#9658;</span> Is Taniti safe for tourists?</div>
-    <div class="faq-a">Violent crime is very rare on Taniti. However, as tourism has increased there are more reports of pickpocketing and petty crimes. Visitors should take standard precautions with valuables in busy tourist areas.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q" onclick="faqToggle(this)"><span class="faq-arrow">&#9658;</span> What language is spoken on the island?</div>
-    <div class="faq-a">Taniti has its own indigenous language. Many younger Tanitians speak fluent English in Taniti City and Merriton Landing. Very little English is spoken in rural areas, especially by older residents.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q" onclick="faqToggle(this)"><span class="faq-arrow">&#9658;</span> Are there medical facilities available on the island?</div>
-    <div class="faq-a">Yes. Taniti has one hospital and several clinics. The hospital has many multilingual employees, making it accessible to international visitors. Travel health insurance is recommended before arriving.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q" onclick="faqToggle(this)"><span class="faq-arrow">&#9658;</span> What type of power outlets does Taniti use?</div>
-    <div class="faq-a">Power outlets on Taniti are 120 volts &mdash; the same standard used in the United States. American travelers do not need a voltage converter or plug adapter.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q" onclick="faqToggle(this)"><span class="faq-arrow">&#9658;</span> Which holidays affect business hours?</div>
-    <div class="faq-a">Taniti observes a large number of national holidays. Many tourist attractions and restaurants will be closed on these days. Visitors are strongly encouraged to check the holiday calendar when planning their itinerary.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q" onclick="faqToggle(this)"><span class="faq-arrow">&#9658;</span> How do I get from the airport to my hotel?</div>
-    <div class="faq-a">Options from the airport include rental cars from a local agency near the airport, taxis available in Taniti City, hotel shuttles (check with your accommodation), and public buses running 5:00 a.m. to 11:00 p.m. daily within Taniti City.</div>
-  </div>
-
-</div>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div class="footer-col"><h4>Contact Information</h4><p>&#128205; 123 Island Way, Taniti</p><p>&#9993; info@visittaniti.com</p></div>
-      <div class="footer-col"><h4>Discover</h4><a href="index.html">About Taniti</a><a href="activities.html">Activities</a><a href="dining.html">Dining</a></div>
-      <div class="footer-col"><h4>Plan</h4><a href="accommodations.html">Accommodations</a><a href="transportation.html">Transportation</a><a href="faq.html">&#9733; Travel Tips and FAQs</a></div>
-      <div class="footer-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Accessibility</a></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniti Tourism - Travel Tips and FAQs</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function navToggle() {
+        document.querySelector("header").classList.toggle("nav-open");
+      }
+      function faqToggle(el) {
+        el.parentElement.classList.toggle("open");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wf-banner">
+      TANITI TOURISM WEBSITE &mdash; LOW-FIDELITY WIREFRAME | UX Design Project
     </div>
-    <div class="footer-bottom">&copy; 2026 Taniti Tourism Board. All rights reserved.</div>
-  </div>
-</footer>
 
-</body>
+    <header>
+      <div class="logo-box">LOGO | TANITI</div>
+      <button
+        class="nav-toggle"
+        onclick="navToggle()"
+        aria-label="Toggle navigation"
+      >
+        &#9776;
+      </button>
+      <div class="nav-links">
+        <a href="index.html">About Taniti</a>
+        <a href="accommodations.html">Accommodations</a>
+        <a href="activities.html">Activities and Attractions</a>
+        <a href="dining.html">Dining</a>
+        <a href="transportation.html">Transportation</a>
+        <a href="faq.html" class="active">Travel Tips and FAQs</a>
+      </div>
+      <input class="nav-search" type="text" placeholder="Search..." />
+    </header>
+
+    <div class="page-title">Travel Tips &amp; FAQs</div>
+
+    <div class="section">
+      <p style="font-size: 13px; color: #777; margin-bottom: 20px">
+        Click any question to expand the answer.
+      </p>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="faqToggle(this)">
+          <span class="faq-arrow">&#9658;</span> What currency is accepted on
+          Taniti?
+        </div>
+        <div class="faq-a">
+          Taniti uses the U.S. dollar as its primary currency. Many businesses
+          also accept euros and yen. Several banks facilitate currency exchange,
+          and most businesses accept major credit cards.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="faqToggle(this)">
+          <span class="faq-arrow">&#9658;</span> What is the legal drinking age
+          on Taniti?
+        </div>
+        <div class="faq-a">
+          The legal drinking age on Taniti is 18. Note that this law is not
+          strictly enforced. Alcohol may not be served or sold between midnight
+          and 9:00 a.m.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="faqToggle(this)">
+          <span class="faq-arrow">&#9658;</span> Is Taniti safe for tourists?
+        </div>
+        <div class="faq-a">
+          Violent crime is very rare on Taniti. However, as tourism has
+          increased there are more reports of pickpocketing and petty crimes.
+          Visitors should take standard precautions with valuables in busy
+          tourist areas.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="faqToggle(this)">
+          <span class="faq-arrow">&#9658;</span> What language is spoken on the
+          island?
+        </div>
+        <div class="faq-a">
+          Taniti has its own indigenous language. Many younger Tanitians speak
+          fluent English in Taniti City and Merriton Landing. Very little
+          English is spoken in rural areas, especially by older residents.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="faqToggle(this)">
+          <span class="faq-arrow">&#9658;</span> Are there medical facilities
+          available on the island?
+        </div>
+        <div class="faq-a">
+          Yes. Taniti has one hospital and several clinics. The hospital has
+          many multilingual employees, making it accessible to international
+          visitors. Travel health insurance is recommended before arriving.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="faqToggle(this)">
+          <span class="faq-arrow">&#9658;</span> What type of power outlets does
+          Taniti use?
+        </div>
+        <div class="faq-a">
+          Power outlets on Taniti are 120 volts &mdash; the same standard used
+          in the United States. American travelers do not need a voltage
+          converter or plug adapter.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="faqToggle(this)">
+          <span class="faq-arrow">&#9658;</span> Which holidays affect business
+          hours?
+        </div>
+        <div class="faq-a">
+          Taniti observes a large number of national holidays. Many tourist
+          attractions and restaurants will be closed on these days. Visitors are
+          strongly encouraged to check the holiday calendar when planning their
+          itinerary.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="faqToggle(this)">
+          <span class="faq-arrow">&#9658;</span> How do I get from the airport
+          to my hotel?
+        </div>
+        <div class="faq-a">
+          Options from the airport include rental cars from a local agency near
+          the airport, taxis available in Taniti City, hotel shuttles (check
+          with your accommodation), and public buses running 5:00 a.m. to 11:00
+          p.m. daily within Taniti City.
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Contact Information</h4>
+            <p>&#128205; 123 Island Way, Taniti</p>
+            <p>&#9993; info@visittaniti.com</p>
+          </div>
+          <div class="footer-col">
+            <h4>Discover</h4>
+            <a href="index.html">About Taniti</a
+            ><a href="activities.html">Activities</a
+            ><a href="dining.html">Dining</a>
+          </div>
+          <div class="footer-col">
+            <h4>Plan</h4>
+            <a href="accommodations.html">Accommodations</a
+            ><a href="transportation.html">Transportation</a
+            ><a href="faq.html">&#9733; Travel Tips and FAQs</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a><a href="#">Terms of Service</a
+            ><a href="#">Accessibility</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2026 Taniti Tourism Board. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

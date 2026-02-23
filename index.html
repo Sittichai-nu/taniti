@@ -1,121 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taniti Tourism - Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <script>function navToggle(){document.querySelector('header').classList.toggle('nav-open');}</script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniti Tourism - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function navToggle() {
+        document.querySelector("header").classList.toggle("nav-open");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wf-banner">
+      TANITI TOURISM WEBSITE &mdash; LOW-FIDELITY WIREFRAME | UX Design Project
+    </div>
 
-<div class="wf-banner">TANITI TOURISM WEBSITE &mdash; LOW-FIDELITY WIREFRAME | UX Design Project</div>
-
-<header>
-  <div class="logo-box">LOGO | TANITI</div>
-  <button class="nav-toggle" onclick="navToggle()" aria-label="Toggle navigation">&#9776;</button>
-  <div class="nav-links">
-    <a href="index.html" class="active">About Taniti</a>
-    <a href="accommodations.html">Accommodations</a>
-    <a href="activities.html">Activities and Attractions</a>
-    <a href="dining.html">Dining</a>
-    <a href="transportation.html">Transportation</a>
-    <a href="faq.html">Travel Tips and FAQs</a>
-  </div>
-  <input class="nav-search" type="text" placeholder="Search..." />
-</header>
-
-<div class="hero">
-  <div class="hero-label">[ Hero Image &mdash; 1440 &times; 420 ]</div>
-  <h1>Welcome to Taniti</h1>
-  <p>Your tropical Pacific island paradise awaits</p>
-  <div class="hero-btns">
-    <a class="btn-primary"   href="accommodations.html">Plan Your Trip</a>
-    <a class="btn-secondary" href="activities.html">Explore the Island</a>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-heading">Explore Taniti</div>
-  <div class="section-sub">[ Section subheading ] &mdash; Invite users to explore the island&rsquo;s key categories</div>
-  <div class="tiles-grid">
-
-    <a class="tile" href="activities.html">
-      <div class="tile-img">[ Image Placeholder ]</div>
-      <div class="tile-body">
-        <h3>Top Attractions</h3>
-        <p>Volcanic peaks, coral reefs, cultural landmarks, and hidden gems.</p>
-        <div class="tile-link">Explore Attractions &rarr;</div>
-      </div>
-    </a>
-
-    <a class="tile" href="accommodations.html">
-      <div class="tile-img">[ Image Placeholder ]</div>
-      <div class="tile-body">
-        <h3>Where to Stay</h3>
-        <p>Beachfront resorts, family hotels, and budget-friendly hostels.</p>
-        <div class="tile-link">Browse Accommodations &rarr;</div>
-      </div>
-    </a>
-
-    <a class="tile" href="transportation.html">
-      <div class="tile-img">[ Image Placeholder ]</div>
-      <div class="tile-body">
-        <h3>Getting Here &amp; Around</h3>
-        <p>Flights, ferry routes, local buses, taxis, and bike rentals.</p>
-        <div class="tile-link">View Transportation &rarr;</div>
-      </div>
-    </a>
-
-    <a class="tile" href="faq.html">
-      <div class="tile-img">[ Image Placeholder ]</div>
-      <div class="tile-body">
-        <h3>Travel Tips &amp; FAQs</h3>
-        <p>Entry requirements, currency, health &amp; safety, and common questions.</p>
-        <div class="tile-link">Read Travel Tips &rarr;</div>
-      </div>
-    </a>
-
-  </div>
-</div>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>Contact Information</h4>
-        <p>&#128205; Taniti Tourism Board, 123 Island Way, Taniti</p>
-        <p>&#128222; +1 (555) 123-4567</p>
-        <p>&#9993; info@visittaniti.com</p>
-        <div class="social-row">
-          <div class="social-icon">f</div>
-          <div class="social-icon">in</div>
-          <div class="social-icon">tw</div>
-          <div class="social-icon">yt</div>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Discover</h4>
-        <a href="index.html">About Taniti</a>
+    <header>
+      <div class="logo-box">LOGO | TANITI</div>
+      <button
+        class="nav-toggle"
+        onclick="navToggle()"
+        aria-label="Toggle navigation"
+      >
+        &#9776;
+      </button>
+      <div class="nav-links">
+        <a href="index.html" class="active">About Taniti</a>
+        <a href="accommodations.html">Accommodations</a>
         <a href="activities.html">Activities and Attractions</a>
         <a href="dining.html">Dining</a>
-      </div>
-      <div class="footer-col">
-        <h4>Plan</h4>
-        <a href="accommodations.html">Accommodations</a>
         <a href="transportation.html">Transportation</a>
         <a href="faq.html">Travel Tips and FAQs</a>
       </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Accessibility</a>
+      <input class="nav-search" type="text" placeholder="Search..." />
+    </header>
+
+    <div class="hero">
+      <div class="hero-label">[ Hero Image &mdash; Tropical Beach Scene ]</div>
+      <h1>Discover Paradise on Taniti Island</h1>
+      <p>
+        White sandy beaches, lush rainforests, and rich culture await your
+        family in the heart of the Pacific
+      </p>
+      <div class="hero-btns">
+        <a class="btn-primary" href="accommodations.html">Plan Your Trip</a>
+        <a class="btn-secondary" href="activities.html">Explore the Island</a>
       </div>
     </div>
-    <div class="footer-bottom">&copy; 2026 Taniti Tourism Board. All rights reserved.</div>
-  </div>
-</footer>
 
-</body>
+    <div class="section">
+      <div class="section-heading">Explore Taniti</div>
+      <div class="section-sub">
+        [ Section subheading ] &mdash; Invite users to explore the
+        island&rsquo;s key categories
+      </div>
+      <div class="tiles-grid">
+        <a class="tile" href="activities.html">
+          <div class="tile-img">🏖️</div>
+          <div class="tile-body">
+            <h3>Top Attractions</h3>
+            <p>
+              Volcanic peaks, coral reefs, cultural landmarks, and hidden gems.
+            </p>
+            <div class="tile-link">Explore Attractions &rarr;</div>
+          </div>
+        </a>
+
+        <a class="tile" href="accommodations.html">
+          <div class="tile-img">🏨</div>
+          <div class="tile-body">
+            <h3>Where to Stay</h3>
+            <p>
+              Beachfront resorts, family hotels, and budget-friendly hostels.
+            </p>
+            <div class="tile-link">Browse Accommodations &rarr;</div>
+          </div>
+        </a>
+
+        <a class="tile" href="transportation.html">
+          <div class="tile-img">✈️</div>
+          <div class="tile-body">
+            <h3>Getting Here &amp; Around</h3>
+            <p>Flights, ferry routes, local buses, taxis, and bike rentals.</p>
+            <div class="tile-link">View Transportation &rarr;</div>
+          </div>
+        </a>
+
+        <a class="tile" href="faq.html">
+          <div class="tile-img">📋</div>
+          <div class="tile-body">
+            <h3>Travel Tips &amp; FAQs</h3>
+            <p>
+              Entry requirements, currency, health &amp; safety, and common
+              questions.
+            </p>
+            <div class="tile-link">Read Travel Tips &rarr;</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Contact Information</h4>
+            <p>&#128205; Taniti Tourism Board, 123 Island Way, Taniti</p>
+            <p>&#128222; +1 (555) 123-4567</p>
+            <p>&#9993; info@visittaniti.com</p>
+            <div class="social-row">
+              <div class="social-icon">f</div>
+              <div class="social-icon">in</div>
+              <div class="social-icon">tw</div>
+              <div class="social-icon">yt</div>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Discover</h4>
+            <a href="index.html">About Taniti</a>
+            <a href="activities.html">Activities and Attractions</a>
+            <a href="dining.html">Dining</a>
+          </div>
+          <div class="footer-col">
+            <h4>Plan</h4>
+            <a href="accommodations.html">Accommodations</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="faq.html">Travel Tips and FAQs</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2026 Taniti Tourism Board. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
